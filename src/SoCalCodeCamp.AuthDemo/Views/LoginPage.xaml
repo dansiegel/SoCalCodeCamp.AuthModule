@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:i18n="clr-namespace:SoCalCodeCamp.AuthDemo.i18n"
+             xmlns:xaml="clr-namespace:SoCalCodeCamp.AuthDemo.Xaml"
+             BackgroundColor="DarkSlateBlue"
+             x:Class="SoCalCodeCamp.AuthDemo.Views.LoginPage">
+  <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+    <StackLayout AbsoluteLayout.LayoutFlags="All" 
+                 AbsoluteLayout.LayoutBounds="0,0,1,1"
+                 VerticalOptions="Center"
+                 HorizontalOptions="Center">
+      <Image Aspect="AspectFit"
+             WidthRequest="300"
+             Source="{xaml:LocalResource 'Xamarin-Bootcamp.png'}" />
+      <Button Text="{x:Static i18n:AppResources.Login}"
+              Command="{Binding LoginCommand}"
+              BorderColor="Black"
+              BorderRadius="15"
+              BackgroundColor="SlateGray"
+              TextColor="AntiqueWhite"
+              Margin="20,5" />
+    </StackLayout>
+
+    <StackLayout IsVisible="{Binding IsBusy}" 
+                 Padding="12"
+                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                 AbsoluteLayout.LayoutBounds="0.5,0.5,-1,-1">
+      <ActivityIndicator IsRunning="{Binding IsBusy}" Color ="White"/>
+      <Label Text="{x:Static i18n:AppResources.Loading}" HorizontalOptions="Center" TextColor="White"/>
+    </StackLayout>
+
+  </AbsoluteLayout>
+</ContentPage>
