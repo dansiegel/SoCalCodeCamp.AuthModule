@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoCalCodeCamp.AuthDemo.Samp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoCalCodeCamp.AuthDemo.Sample.UWP", "sample\SoCalCodeCamp.AuthDemo.Sample\SoCalCodeCamp.AuthDemo.Sample.UWP\SoCalCodeCamp.AuthDemo.Sample.UWP.csproj", "{BA7E4687-5F96-414C-86BE-A1A3BF6BA10D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoCalCodeCamp.AuthDemo.Sample", "sample\SoCalCodeCamp.AuthDemo.Sample\SoCalCodeCamp.AuthDemo.Sample\SoCalCodeCamp.AuthDemo.Sample.csproj", "{03A9D0B7-BFC5-4BEF-9D78-4A7AAB5A09C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SoCalCodeCamp.AuthDemo.Sample", "sample\SoCalCodeCamp.AuthDemo.Sample\SoCalCodeCamp.AuthDemo.Sample\SoCalCodeCamp.AuthDemo.Sample.csproj", "{03A9D0B7-BFC5-4BEF-9D78-4A7AAB5A09C6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{80610A79-B8CF-4E7C-AB26-A1D5C6293696}"
 	ProjectSection(SolutionItems) = preProject
@@ -96,6 +96,7 @@ Global
 		{333A537D-8FC8-4468-8961-1245B9001BFA}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{333A537D-8FC8-4468-8961-1245B9001BFA}.Debug|x86.Build.0 = Debug|Any CPU
 		{333A537D-8FC8-4468-8961-1245B9001BFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{333A537D-8FC8-4468-8961-1245B9001BFA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{333A537D-8FC8-4468-8961-1245B9001BFA}.Release|ARM.ActiveCfg = Release|Any CPU
 		{333A537D-8FC8-4468-8961-1245B9001BFA}.Release|ARM.Build.0 = Release|Any CPU
 		{333A537D-8FC8-4468-8961-1245B9001BFA}.Release|iPhone.ActiveCfg = Release|Any CPU
