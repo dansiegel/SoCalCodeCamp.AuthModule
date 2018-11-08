@@ -12,6 +12,7 @@ dotnet tool install --tool-path . SignClient
 
 $appSettings = "$currentDirectory\appsettings.json"
 $fileList = "$currentDirectory\filelist.txt"
+$repoName = $env:BUILD_REPOSITORY_NAME -replace ".*/",""
 
 $azureAd = @{
     SignClient = @{
@@ -34,7 +35,7 @@ $nupkgs = Get-ChildItem $env:BUILD_ARTIFACTSTAGINGDIRECTORY\*.nupkg -recurse | S
 foreach ($nupkg in $nupkgs){
     Write-Host "Submitting $nupkg for signing"
 
-    .\SignClient 'sign' -c $appSettings -i $nupkg -f $fileList -r $env:SignClientUser -s $env:SignClientSecret -n $BUILD_REPOSITORY_NAME -d $BUILD_REPOSITORY_NAME -u $BUILD_REPOSITORY_URI 
+    .\SignClient 'sign' -c $appSettings -i $nupkg -f $fileList -r $env:SignClientUser -s $env:SignClientSecret -n $repoName -d $repoName -u $env:BUILD_REPOSITORY_URI
 
     Write-Host "Finished signing $nupkg"
 }

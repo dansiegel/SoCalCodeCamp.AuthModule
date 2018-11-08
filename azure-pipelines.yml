@@ -32,8 +32,10 @@ steps:
   env:
     SignClientUser: $(SignClientUser)
     SignClientSecret: $(SignClientSecret)
+    SignClientAADInstance: $(SignClientAADInstance)
     SignClientClientId: $(SignClientClientId)
     SignClientTenantId: $(SignClientTenantId)
+    SignServiceUrl: $(SignServiceUrl)
     SignServiceResourceId: $(SignServiceResourceId)
   condition: and(succeeded(), eq(variables['system.pullrequest.isfork'], false))
 
