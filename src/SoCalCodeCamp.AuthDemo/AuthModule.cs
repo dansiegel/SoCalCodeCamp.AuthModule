@@ -23,9 +23,6 @@ namespace SoCalCodeCamp.AuthDemo
         {
             Logger = containerProvider.Resolve<ILogger>();
             RxApp.DefaultExceptionHandler = this;
-
-            var assemblyName = typeof(Xamarin.Forms.Application).Assembly.GetName();
-            System.Diagnostics.Debug.WriteLine(assemblyName.Version.ToString());
         }
 
         public void RegisterTypes(IContainerRegistry containerRegistry)
