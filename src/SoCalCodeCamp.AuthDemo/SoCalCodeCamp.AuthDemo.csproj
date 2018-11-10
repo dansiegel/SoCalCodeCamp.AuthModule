@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="ReadMe.txt" Pack="true" PackagePath="content" />
+    <Content Include="ReadMe.txt" Pack="true" PackagePath="readme.txt" />
     <PackageReference Include="Prism.Forms" Version="7.1.0.431" />
     <PackageReference Include="Microsoft.Identity.Client" Version="2.3.1-preview" />
     <PackageReference Include="Prism.Plugin.Logging.Common" Version="1.1.1.230" />
